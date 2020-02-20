@@ -7,4 +7,5 @@ Run command:
 ```bash
 docker container run -d --name zammad -p 80:80 beneventsur/zammad:latest
 ```
-* For managed data bind-mount folder add: -v /zammad:/shared/zammad
+* For managed data bind-mount folder add ```-v /zammad:/shared/zammad```.
+* For backups add ```-v /zammad_backup:/var/tmp/zammad_backup``` and read [this](https://docs.zammad.org/en/latest/appendix/backup-and-restore.html).
